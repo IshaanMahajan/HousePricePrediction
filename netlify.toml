@@ -1,6 +1,5 @@
 [build]
   functions = "netlify_functions/"
+  command = "pip install -r requirements.txt"
   publish = "static/"
-
-[build.environment]
-  FLASK_ENV = "production"
+  environment = { FLASK_ENV = "production" }
