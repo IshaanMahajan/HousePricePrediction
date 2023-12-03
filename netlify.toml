@@ -1,4 +1,5 @@
 [build]
+  image = "netlify/build:x.y.z"
   functions = "netlify_functions/"
   command = "pip install -r requirements.txt"
   publish = "static/"
