@@ -1,2 +1,6 @@
 [build]
-  functions = "functions"
+  functions = "netlify_functions/"
+  publish = "static/"
+
+[build.environment]
+  FLASK_ENV = "production"
